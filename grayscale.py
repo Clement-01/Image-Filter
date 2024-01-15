@@ -22,16 +22,13 @@ def grayscale(pixels):
   for row in range(len(pixels)):
       new_row = []
       for col in range(len(pixels[row])):
-          # The body of this loop merely makes a copy of pixels.
-          # You will need to compute the grayscale equivalent.
           r, g, b = pixels[row][col]
           avg = (r + g + b)/ 3
           r = avg
           g = avg
           b = avg
           new_row.append((r, g, b))
-      new_pixels.append(new_row)
-      
+      new_pixels.append(new_row)    
   return new_pixels
 
 main()
