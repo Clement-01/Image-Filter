@@ -15,3 +15,4 @@ def ImageToList(img):
         for col in range(len(pixels[row])):
             pixels[row][col] = (pixels[row][col][0], pixels[row][col][1], pixels[row][col][2])
     return pixels
+    
